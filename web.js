@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var homepage = fs.readFile('./index.html')
+var homepage = fs.readFile('./bitstarter/index.html')
 
 app.get('/', function(request, response) {
   response.send(homepage)};)
