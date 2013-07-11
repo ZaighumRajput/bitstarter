@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 var homepage = fs.readFile(index.html)
 
 app.get('/', function(request, response) {
-  response.send('homepage')};)
+  response.send(homepage)};)
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
